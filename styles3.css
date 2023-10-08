@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Add this to create space between the pairs of cards */
+    text-align: center;
+}
+
+
+body {
+    font-family: Arial;
+    background-color: #17151e;
+    background-image: url('pictures/Asura Scans logo.png');
+    background-attachment: fixed;
+    background-size: 20% ;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.heading{
+    text-align: center;
+    color: white;
+}
+
+.card {
+    width: 300px;
+    background-color: #222;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(239, 225, 225, 0.7);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card-content {
+    margin-top: 20px;
+    color: #fff
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #663399;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    background-color: #555;
+}
+
+.description {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.card:hover .description {
+    display: block;
+    margin-top: 20px;
+}
+
+.info-content {
+    background-color: #eddfd3;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.info-content h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
